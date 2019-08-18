@@ -14,7 +14,9 @@ class HomeFragment : Fragment() {
         fun newInstance() = HomeFragment()
     }
 
-    private val viewModel: HomeViewModel by viewModels()
+    private val viewModel: HomeViewModel by viewModels {
+        ServiceLocator.providesHomeViewModelFactory(requireContext())
+    }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return HomeFragmentBinding.inflate(inflater, container, false).also { binding ->
