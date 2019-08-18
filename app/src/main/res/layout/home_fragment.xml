@@ -25,7 +25,7 @@
             android:id="@+id/home_count_text_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@{String.valueOf(viewModel.count)}" />
+            android:count="@{viewModel.count}" />
 
         <Button
             android:id="@+id/home_increment_button"
