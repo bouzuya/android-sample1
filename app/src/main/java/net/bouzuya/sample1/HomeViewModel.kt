@@ -4,4 +4,5 @@ import androidx.lifecycle.ViewModel
 
 class HomeViewModel : ViewModel() {
     val name = "Home"
+    val count = 0
 }
